@@ -1,5 +1,6 @@
 package br.com.janes.vision.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -11,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Requests {
 
 	@JsonProperty("requests")
-	private List<Request> requests = null;
+	private List<Request> requests = new ArrayList<>();
 
 	@JsonProperty("requests")
 	public List<Request> getRequests() {

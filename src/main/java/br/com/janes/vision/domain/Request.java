@@ -1,5 +1,6 @@
 package br.com.janes.vision.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -13,7 +14,7 @@ public class Request {
 	@JsonProperty("image")
 	private Image image;
 	@JsonProperty("features")
-	private List<Feature> features = null;
+	private List<Feature> features = new ArrayList<>();
 	@JsonProperty("imageContext")
 	private ImageContext imageContext;
 

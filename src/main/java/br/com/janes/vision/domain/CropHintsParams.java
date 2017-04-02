@@ -1,5 +1,6 @@
 package br.com.janes.vision.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -11,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class CropHintsParams {
 
 	@JsonProperty("aspectRatios")
-	private List<Double> aspectRatios = null;
+	private List<Double> aspectRatios = new ArrayList<>();
 
 	@JsonProperty("aspectRatios")
 	public List<Double> getAspectRatios() {
